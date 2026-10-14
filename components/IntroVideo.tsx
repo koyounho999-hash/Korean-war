@@ -1,0 +1,2 @@
+'use client';
+export default function IntroVideo({onDone}:{onDone:()=>void}){return <section className="intro"><video src="/video/intro.mp4" autoPlay playsInline onEnded={onDone}/><div className="introShade"/><div className="caption"><small>1950년 6월 25일 · 긴급 방송</small><strong>“북한군이 38도선을 넘어 남침했습니다. 전선 상황이 급박하게 변하고 있습니다.”</strong><span>※ 학습용으로 재구성한 자막입니다.</span></div><button className="skip" onClick={onDone}>인트로 건너뛰기 →</button></section>}
